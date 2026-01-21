@@ -24,3 +24,6 @@ Para garantizar un desarrollo organizado y colaborativo, se establecieron las si
 - Control de versiones y trabajo colaborativo:
   Se crearán ramas individuales en el repositorio para cada una de las soluciones desarrolladas. Posteriormente, una vez validadas y corregidas, se realizará el proceso de merge hacia la rama principal (main),      integrando de manera ordenada todos los puntos requeridos en el laboratorio.
 
+
+HOLA SOY LAURA ESTOY APRENDIENDO A HACER ESTO
+
