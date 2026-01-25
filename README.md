@@ -30,5 +30,7 @@ Para garantizar un desarrollo organizado y colaborativo, se establecieron las si
 **Desarrollado por:** Kevin Cuitiva  
 **Descripción:** Implementación de una expresión lambda para imprimir un saludo de bienvenida utilizando streams, map() y collect(). Los estudiantes están almacenados en una estructura de datos List.
 ### Evidencia del reto 
+<img width="1908" height="948" alt="image" src="https://github.com/user-attachments/assets/679c70ab-fbc9-4bee-8c83-d1acc8982762" />
+
 
 
