@@ -40,7 +40,7 @@ public class Reto1 {
         estudiantes.add(new Estudiante("Laura Castillo", 20, "laura.castillo@mail.escuelaing.edu.co", 6));
         estudiantes.add(new Estudiante("Juan Silva", 21, "juan.silva@mail.escuelaing.edu.co", 6));
 
-        // Usar streams y lambdas para generar mensaje de bienvenida
+        // streams y lambdas para mensaje de bienvenida
         String mensajeBienvenida = estudiantes.stream()
             .map(e -> e.getNombre() + ", estudiante de la escuela de " + e.getSemestre() + " semestre de " + e.getEdad() + " años")
             .collect(Collectors.joining(" y "));

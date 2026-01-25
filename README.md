@@ -26,7 +26,9 @@ Para garantizar un desarrollo organizado y colaborativo, se establecieron las si
 
 ## RETOS COMPLETADOS
 
-### Reto #1: La Bienvenida ✓
+### Reto #1: La Bienvenida 
 **Desarrollado por:** Kevin Cuitiva  
 **Descripción:** Implementación de una expresión lambda para imprimir un saludo de bienvenida utilizando streams, map() y collect(). Los estudiantes están almacenados en una estructura de datos List.
+### Evidencia del reto 
+
 
