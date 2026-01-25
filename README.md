@@ -32,6 +32,9 @@ Para garantizar un desarrollo organizado y colaborativo, se establecieron las si
 ### Evidencia del reto 
 <img width="1908" height="948" alt="image" src="https://github.com/user-attachments/assets/679c70ab-fbc9-4bee-8c83-d1acc8982762" />
 
-### Reto #5: Batalla de Conjuntos ✓
+### Reto #5: Batalla de Conjuntos 
 **Desarrollado por:** Kevin Cuitiva  
 **Descripción:** Simulación de una batalla donde dos equipos (HashSet y TreeSet) almacenan números. HashSet elimina múltiplos de 3 sin orden, mientras TreeSet elimina múltiplos de 5 manteniendo orden ascendente. Al final, ambas colecciones se unen eliminando duplicados. Utiliza stream().filter() con lambdas para el filtrado y forEach() con lambdas para la impresión de resultados.
+### Evidencia del reto 
+<img width="1907" height="1110" alt="image" src="https://github.com/user-attachments/assets/fb061c53-4cbe-471c-94c2-1af206a895d6" />
+
