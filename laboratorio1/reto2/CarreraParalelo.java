@@ -74,6 +74,37 @@ public class CarreraParalelo {
     }
     
     public static void main(String[] args) {
-        // Aquí irán las pruebas de los dos carriles
+        System.out.println("=== CARRERA EN PARALELO ===\n");
+        
+        // Crear dos listas de números para la carrera
+        List<Integer> lista1 = Arrays.asList(15, 3, 42, 8, 99, 12);
+        List<Integer> lista2 = Arrays.asList(7, 25, 4, 18, 33, 6);
+        
+        System.out.println("Lista 1 (Carril 1): " + lista1);
+        System.out.println("Lista 2 (Carril 2): " + lista2 + "\n");
+        
+        // Prueba Carril 1 - Encontrar número mayor
+        System.out.println("--- CARRIL 1: Encontrar Número Mayor ---");
+        int mayor = encontrarMayor.operar(lista1);
+        System.out.println("Número mayor en lista1: " + mayor);
+        System.out.println("¿Es mayor de dos dígitos?: " + esNumeroDeDosDigitos(mayor) + "\n");
+        
+        // Prueba Carril 2 - Encontrar número menor
+        System.out.println("--- CARRIL 2: Encontrar Número Menor ---");
+        int menor = encontrarMenor.operar(lista2);
+        System.out.println("Número menor en lista2: " + menor);
+        System.out.println("¿Es divisible por 2?: " + esDivisiblePorDos(menor) + "\n");
+        
+        // Tercer choque - Validaciones finales
+        System.out.println("--- TERCER CHOQUE: Validaciones ---");
+        System.out.println("Cantidad total de datos: " + (lista1.size() + lista2.size()));
+        System.out.println("¿Cantidad es par?: " + cantidadDatosEsPar(lista1.size() + lista2.size()));
+        System.out.println("¿Cantidad es impar?: " + cantidadDatosEsImpar(lista1.size() + lista2.size()) + "\n");
+        
+        // La gran meta - Fusionar en una función
+        System.out.println("--- LA GRAN META: Resultado Combinado ---");
+        Resultados resultado = procesarDosListas(lista1, lista2);
+        System.out.println(resultado);
+        System.out.println("\nCarrera completada exitosamente!");
     }
 }
