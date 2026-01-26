@@ -39,6 +39,6 @@ public class CarreraParalelo {
     };
     
     public static void main(String[] args) {
-        // Aquí irán las pruebas de los dos carriles
+        
     }
 }
