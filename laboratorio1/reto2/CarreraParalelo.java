@@ -38,6 +38,16 @@ public class CarreraParalelo {
         return lista.stream().max(Integer::compare).orElse(Integer.MIN_VALUE);
     };
     
+    // Carril 2 - Encuentra el número más pequeño y verifica si es divisible por 2
+    public static OperacionNumeros encontrarMenor = lista -> {
+        if (lista == null || lista.isEmpty()) return Integer.MAX_VALUE;
+        return lista.stream().min(Integer::compare).orElse(Integer.MAX_VALUE);
+    };
+    
+    public static boolean esDivisiblePorDos(int numero) {
+        return numero % 2 == 0;
+    }
+    
     public static void main(String[] args) {
         // Aquí irán las pruebas de los dos carriles
     }
