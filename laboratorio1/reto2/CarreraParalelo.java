@@ -26,6 +26,18 @@ public class CarreraParalelo {
         }
     }
     
+    // Interfaz funcional para operación con lista de números
+    @FunctionalInterface
+    interface OperacionNumeros {
+        int operar(List<Integer> numeros);
+    }
+    
+    // Carril 1 - Encuentra el número más grande
+    public static OperacionNumeros encontrarMayor = lista -> {
+        if (lista == null || lista.isEmpty()) return Integer.MIN_VALUE;
+        return lista.stream().max(Integer::compare).orElse(Integer.MIN_VALUE);
+    };
+    
     public static void main(String[] args) {
         // Aquí irán las pruebas de los dos carriles
     }
