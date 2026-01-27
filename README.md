@@ -86,9 +86,8 @@ El desarrollo del reto se realizó dividiendo la inicialización de los comandos
 
 Este reto permitió reforzar conceptos relacionados con programación funcional en Java, uso de colecciones, lambdas, y diseño modular, además de fomentar buenas prácticas de legibilidad y mantenimiento del código.
 
-Evidencia del reto
+Evidencia del reto:
 
-Implementación de la máquina de decisiones con comandos interactivos
-Ejecución del programa solicitando comandos al usuario y mostrando las respuestas correspondientes
+Implementación de la máquina de decisiones con comandos interactivosy ejecución del programa solicitando comandos al usuario y mostrando las respuestas correspondientes
 <img width="1900" height="900" src="image-5.png" />
 
