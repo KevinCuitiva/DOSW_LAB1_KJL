@@ -14,7 +14,7 @@ public class reto4 {
         return hashMap;
     }
 
-    // Función extra del estudiante A
+
     public static void imprimirEnMayusculas(Map<String, Integer> mapa) {
         mapa.forEach((k, v) ->
             System.out.println("Clave: " + k.toUpperCase() + " | Valor: " + v)
