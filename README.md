@@ -59,3 +59,36 @@ Rama con implementación usando Hashtable
 Rama principal con integración final y resolución de conflictos
 <img width="1900" height="900" src="image-4.png" />
 
+Reto #6: Máquina de decisiones
+
+Desarrollado por: Laura Nicol Castillo Forero
+
+Descripción:
+En este reto se desarrolló una máquina de decisiones interactiva en Java, cuyo objetivo principal fue implementar un sistema capaz de ejecutar distintas acciones a partir de comandos ingresados por el usuario desde la consola.
+
+La solución se basa en el uso de un Map<String, Runnable>, donde cada clave representa un comando y cada valor corresponde a una acción específica que la máquina puede ejecutar. Este enfoque permitió evitar estructuras condicionales extensas (if-else o switch), logrando un diseño más limpio, flexible y escalable.
+
+El desarrollo del reto se realizó dividiendo la inicialización de los comandos en dos fragmentos lógicos, los cuales fueron integrados posteriormente en una única solución funcional.
+
+-La versión final del programa cumple con las siguientes características:
+
+-Permite al usuario ingresar comandos dinámicamente desde la consola.
+
+-Ejecuta acciones asociadas a cada comando utilizando expresiones lambda.
+
+-Convierte los comandos ingresados a mayúsculas para evitar errores por diferencias de formato.
+
+-Maneja correctamente los comandos desconocidos mostrando un mensaje informativo.
+
+-Incluye un comando especial (SALIR) que finaliza la ejecución del programa de forma controlada.
+
+-Facilita la extensión del sistema mediante la adición de nuevos comandos sin modificar la lógica principal.
+
+Este reto permitió reforzar conceptos relacionados con programación funcional en Java, uso de colecciones, lambdas, y diseño modular, además de fomentar buenas prácticas de legibilidad y mantenimiento del código.
+
+Evidencia del reto
+
+Implementación de la máquina de decisiones con comandos interactivos
+Ejecución del programa solicitando comandos al usuario y mostrando las respuestas correspondientes
+<img width="1900" height="900" src="image-5.png" />
+
