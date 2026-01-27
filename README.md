@@ -88,6 +88,6 @@ Este reto permitió reforzar conceptos relacionados con programación funcional 
 
 Evidencia del reto:
 
-Implementación de la máquina de decisiones con comandos interactivosy ejecución del programa solicitando comandos al usuario y mostrando las respuestas correspondientes
+Implementación de la máquina de decisiones con comandos interactivos y ejecución del programa solicitando comandos al usuario y mostrando las respuestas correspondientes
 <img width="1900" height="900" src="image-5.png" />
 
