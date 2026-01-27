@@ -32,9 +32,6 @@ public class reto4 {
         return finalMap;
     }
 
-    // ===========================
-    // MAIN INTERACTIVO
-    // ===========================
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
