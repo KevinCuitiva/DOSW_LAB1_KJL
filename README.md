@@ -32,7 +32,7 @@ Para garantizar un desarrollo organizado y colaborativo, se establecieron las si
 # Retos Hackethon Express 
 
 # PREGUNTAS 
-Pregunta 1
+Pregunta 1: 
 ¿Cuál es la diferencia entre git merge y git rebase?
 
 Respondida por: Laura Nicol Castillo Forero
@@ -44,7 +44,7 @@ El comando git merge combina dos ramas creando un commit de merge, el cual conse
 
 En resumen, git merge preserva el historial tal como ocurrió, mientras que git rebase lo reorganiza para hacerlo más lineal.
 
-Pregunta 2
+Pregunta 2: 
 Si dos ramas modifican la misma línea de un archivo, ¿qué sucede al hacer merge?
 
 Respondida por: Laura Nicol Castillo Forero 
@@ -52,7 +52,7 @@ Respondida por: Laura Nicol Castillo Forero
 Respuesta:
 Cuando dos ramas modifican la misma línea de un archivo y se intenta realizar un git merge, Git no puede decidir automáticamente cuál cambio conservar. En este caso, se produce un conflicto de merge.
 
-Pregunta 3
+Pregunta 3: 
 ¿Cómo puedes ver gráficamente el historial de merges y ramas en consola?
 
 Respondida por:  Laura Nicol Castillo Forero
@@ -65,7 +65,7 @@ git log --oneline --graph --all
 
 Este comando muestra una representación visual del historial del repositorio, donde se pueden observar las bifurcaciones de ramas, los commits realizados y los puntos en los que se realizaron merges. Esta visualización facilita la comprensión del flujo de trabajo y la relación entre las diferentes ramas del proyecto.
 
-Pregunta 4
+Pregunta 4: 
 Explica la diferencia entre un commit y un push.
 
 Respondida por: Laura Nicol Castillo Forero
