@@ -50,7 +50,7 @@ Finalmente, se realizó el proceso de merge en la rama principal del reto, resol
 Evidencia del reto
 
 Rama con implementación usando HashMap
-<img width="1900" height="900" src="imagenes/image-2.png" />
+<img width="1900" height="900" src="image-2.png" />
 
 
 Rama con implementación usando Hashtable
