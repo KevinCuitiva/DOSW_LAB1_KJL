@@ -9,10 +9,8 @@ public class reto4 {
 
         Map<String, Integer> resultado = new HashMap<>(hashMap);
 
-        // Prioriza valores del Hashtable
         hashTable.forEach(resultado::put);
 
-        // Stream final
         Map<String, Integer> finalMap =
                 resultado.entrySet().stream()
                         .map(e -> Map.entry(e.getKey().toUpperCase(), e.getValue()))
@@ -24,7 +22,6 @@ public class reto4 {
                                 LinkedHashMap::new
                         ));
 
-        // Imprimir formato final
         finalMap.forEach((k, v) ->
                 System.out.println("Clave: " + k + " | Valor: " + v)
         );
@@ -52,7 +49,6 @@ public class reto4 {
             int valor = sc.nextInt();
             sc.nextLine();
 
-            // Ignora duplicados (conserva el primero)
             hashMap.putIfAbsent(clave, valor);
         }
 
@@ -69,7 +65,6 @@ public class reto4 {
             int valor = sc.nextInt();
             sc.nextLine();
 
-            // Reemplaza si está repetido
             hashTable.put(clave, valor);
         }
 
