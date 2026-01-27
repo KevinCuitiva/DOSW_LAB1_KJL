@@ -54,7 +54,8 @@ Rama con implementación usando HashMap
 
 
 Rama con implementación usando Hashtable
-
+<img width="1900" height="900" src="image-3.png" />
 
 Rama principal con integración final y resolución de conflictos
+<img width="1900" height="900" src="image-4.png" />
 
