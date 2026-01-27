@@ -24,3 +24,37 @@ Para garantizar un desarrollo organizado y colaborativo, se establecieron las si
 - Control de versiones y trabajo colaborativo:
   Se crearán ramas individuales en el repositorio para cada una de las soluciones desarrolladas. Posteriormente, una vez validadas y corregidas, se realizará el proceso de merge hacia la rama principal (main),      integrando de manera ordenada todos los puntos requeridos en el laboratorio.
 
+# RETOS COMPLETADOS
+
+Reto #4: El tesoro de las llaves duplicadas
+
+Desarrollado por: Laura Nicol Castillo Forero
+
+Descripción:
+En este reto se implementó la combinación de dos estructuras de datos (HashMap y Hashtable) desarrolladas en ramas separadas del repositorio, aplicando buenas prácticas de control de versiones con Git.
+
+Inicialmente, se desarrolló una solución utilizando HashMap, la cual almacena pares clave-valor ignorando claves duplicadas y conservando el primer valor ingresado. Posteriormente, se implementó una versión alternativa usando Hashtable, asegurando sincronización y permitiendo la sobrescritura de valores en caso de claves repetidas.
+
+Finalmente, se realizó el proceso de merge en la rama principal del reto, resolviendo los conflictos generados y unificando ambas implementaciones en una única solución final que:
+
+- Prioriza los valores provenientes del Hashtable en caso de conflicto
+
+- Convierte todas las claves a mayúsculas antes de imprimir
+
+- Ordena los resultados de forma ascendente
+
+- Utiliza stream(), map(), sorted() y Collectors.toMap() con expresiones lambda
+
+- Permite el ingreso de datos por parte del usuario desde consola
+
+Evidencia del reto
+
+Rama con implementación usando HashMap
+<img width="1900" height="900" src="imagenes/image-2.png" />
+
+
+Rama con implementación usando Hashtable
+
+
+Rama principal con integración final y resolución de conflictos
+
