@@ -31,3 +31,50 @@ Para garantizar un desarrollo organizado y colaborativo, se establecieron las si
 
 # Retos Hackethon Express 
 
+# PREGUNTAS 
+Pregunta 1
+¿Cuál es la diferencia entre git merge y git rebase?
+
+Respondida por: Laura Nicol Castillo Forero
+
+Respuesta:
+git merge y git rebase son dos comandos utilizados para integrar cambios entre ramas, pero funcionan de manera diferente.
+
+El comando git merge combina dos ramas creando un commit de merge, el cual conserva el historial completo de ambas ramas. Este método es seguro y mantiene una representación fiel del trabajo colaborativo, ya que permite identificar claramente cuándo y desde qué ramas se realizaron las integraciones.
+
+En resumen, git merge preserva el historial tal como ocurrió, mientras que git rebase lo reorganiza para hacerlo más lineal.
+
+Pregunta 2
+Si dos ramas modifican la misma línea de un archivo, ¿qué sucede al hacer merge?
+
+Respondida por: Laura Nicol Castillo Forero 
+
+Respuesta:
+Cuando dos ramas modifican la misma línea de un archivo y se intenta realizar un git merge, Git no puede decidir automáticamente cuál cambio conservar. En este caso, se produce un conflicto de merge.
+
+Pregunta 3
+¿Cómo puedes ver gráficamente el historial de merges y ramas en consola?
+
+Respondida por:  Laura Nicol Castillo Forero
+
+Respuesta:
+Para visualizar gráficamente el historial de commits, ramas y merges desde la consola, se puede utilizar el siguiente comando:
+
+git log --oneline --graph --all
+
+
+Este comando muestra una representación visual del historial del repositorio, donde se pueden observar las bifurcaciones de ramas, los commits realizados y los puntos en los que se realizaron merges. Esta visualización facilita la comprensión del flujo de trabajo y la relación entre las diferentes ramas del proyecto.
+
+Pregunta 4
+Explica la diferencia entre un commit y un push.
+
+Respondida por: Laura Nicol Castillo Forero
+
+Respuesta:
+Un commit es una acción local que guarda los cambios realizados en el repositorio del desarrollador. Al hacer un commit, los cambios quedan registrados en el historial del proyecto en la máquina local, pero aún no se comparten con otros colaboradores.
+
+Un push, en cambio, se utiliza para enviar los commits locales a un repositorio remoto, como GitHub. Solo después de realizar un push, los cambios se hacen visibles y accesibles para los demás integrantes del equipo.
+
+En resumen, el commit guarda cambios localmente, mientras que el push los publica en el repositorio remoto.
+
+
