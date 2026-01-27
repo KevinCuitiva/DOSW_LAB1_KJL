@@ -1,24 +1,82 @@
-import java.util.Hashtable;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class reto4 {
 
-    public static Map<String, Integer> crearHashtable(List<Map.Entry<String, Integer>> lista) {
-        Map<String, Integer> hashtable = new Hashtable<>();
+    public static Map<String, Integer> combinarYMostrar(
+            Map<String, Integer> hashMap,
+            Map<String, Integer> hashTable) {
 
-        for (Map.Entry<String, Integer> entrada : lista) {
-            hashtable.put(entrada.getKey(), entrada.getValue());
-        }
+        Map<String, Integer> resultado = new HashMap<>(hashMap);
 
-        return hashtable;
+        // Prioriza valores del Hashtable
+        hashTable.forEach(resultado::put);
+
+        // Stream final
+        Map<String, Integer> finalMap =
+                resultado.entrySet().stream()
+                        .map(e -> Map.entry(e.getKey().toUpperCase(), e.getValue()))
+                        .sorted(Map.Entry.comparingByKey())
+                        .collect(Collectors.toMap(
+                                Map.Entry::getKey,
+                                Map.Entry::getValue,
+                                (a, b) -> a,
+                                LinkedHashMap::new
+                        ));
+
+        // Imprimir formato final
+        finalMap.forEach((k, v) ->
+                System.out.println("Clave: " + k + " | Valor: " + v)
+        );
+
+        return finalMap;
     }
 
-    public static void imprimirOrdenado(Map<String, Integer> mapa) {
-        mapa.entrySet().stream()
-            .sorted(Map.Entry.comparingByKey())
-            .forEach(e ->
-                System.out.println("Clave: " + e.getKey() + " | Valor: " + e.getValue())
-            );
+    // ===========================
+    // MAIN INTERACTIVO
+    // ===========================
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        Map<String, Integer> hashMap = new HashMap<>();
+        Map<String, Integer> hashTable = new Hashtable<>();
+
+        System.out.println("=== INGRESO DE DATOS PARA HASHMAP ===");
+        System.out.print("¿Cuántos pares desea ingresar? ");
+        int n1 = sc.nextInt();
+        sc.nextLine();
+
+        for (int i = 0; i < n1; i++) {
+            System.out.print("Clave " + (i + 1) + ": ");
+            String clave = sc.nextLine();
+
+            System.out.print("Valor " + (i + 1) + ": ");
+            int valor = sc.nextInt();
+            sc.nextLine();
+
+            // Ignora duplicados (conserva el primero)
+            hashMap.putIfAbsent(clave, valor);
+        }
+
+        System.out.println("\n=== INGRESO DE DATOS PARA HASHTABLE ===");
+        System.out.print("¿Cuántos pares desea ingresar? ");
+        int n2 = sc.nextInt();
+        sc.nextLine();
+
+        for (int i = 0; i < n2; i++) {
+            System.out.print("Clave " + (i + 1) + ": ");
+            String clave = sc.nextLine();
+
+            System.out.print("Valor " + (i + 1) + ": ");
+            int valor = sc.nextInt();
+            sc.nextLine();
+
+            // Reemplaza si está repetido
+            hashTable.put(clave, valor);
+        }
+
+        System.out.println("\n===== RESULTADO FINAL =====");
+        combinarYMostrar(hashMap, hashTable);
     }
 }
