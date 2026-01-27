@@ -3,24 +3,19 @@ import java.util.Map;
 
 public class reto6 {
     
-    // Map que vincula comandos con acciones usando Runnable (expresiones lambda)
     private static Map<String, Runnable> maquina = new HashMap<>();
     
-    // Método para ejecutar un comando
     public static void ejecutarComando(String comando) {
-        // Convertir a mayúsculas para evitar errores de caso
+        
         comando = comando.toUpperCase();
         
-        // Verificar si el comando existe en el mapa
-        if (maquina.containsKey(comando)) {
-            // Ejecutar la acción asociada al comando
+       if (maquina.containsKey(comando)) {
             maquina.get(comando).run();
         } else {
             System.out.println("Comando desconocido: " + comando);
         }
     }
     
-    // Inicializar la máquina con los comandos del Fragmento 1 (Estudiante A)
     public static void inicializarFragmento1() {
         // SALUDAR
         maquina.put("SALUDAR", () -> {
@@ -43,7 +38,6 @@ public class reto6 {
         });
     }
     
-    // Inicializar los comandos del Fragmento 2 (Estudiante B)
     public static void inicializarFragmento2() {
         // BROMEAR
         maquina.put("BROMEAR", () -> {
@@ -66,13 +60,11 @@ public class reto6 {
         });
     }
     
-    // Main para demostrar el funcionamiento
+    // main
     public static void main(String[] args) {
-        // Inicializar ambos fragmentos
         inicializarFragmento1();
         inicializarFragmento2();
         
-        // Demostrar todos los comandos
         System.out.println("=== MÁQUINA DE DECISIONES ===\n");
         
         ejecutarComando("SALUDAR");
