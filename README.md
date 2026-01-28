@@ -14,7 +14,7 @@ Para garantizar un desarrollo organizado y colaborativo, se establecieron las si
 
 - Lectura y análisis del laboratorio y los retos:
   Todos los integrantes del equipo realizarán la lectura completa del laboratorio y de los retos propuestos, con el fin de comprender claramente los objetivos, requerimientos y posibles dificultades.
-
+ 
 -Asignación de retos individuales:
   Cada integrante del equipo tendrá asignado uno o varios retos específicos, los cuales deberá intentar desarrollar de manera individual. Este trabajo permitirá identificar posibles errores, dudas o alternativas    de solución.
 
@@ -24,6 +24,7 @@ Para garantizar un desarrollo organizado y colaborativo, se establecieron las si
 - Control de versiones y trabajo colaborativo:
   Se crearán ramas individuales en el repositorio para cada una de las soluciones desarrolladas. Posteriormente, una vez validadas y corregidas, se realizará el proceso de merge hacia la rama principal (main),      integrando de manera ordenada todos los puntos requeridos en el laboratorio.
 
+<<<<<<< HEAD
 # RETOS COMPLETADOS
 
 Reto #4: El tesoro de las llaves duplicadas
@@ -90,4 +91,12 @@ Evidencia del reto:
 
 Implementación de la máquina de decisiones con comandos interactivos y ejecución del programa solicitando comandos al usuario y mostrando las respuestas correspondientes
 <img width="1900" height="900" src="image-5.png" />
+=======
+# Estructura de paquetes creada:
+
+<img width="396" height="537" alt="image" src="https://github.com/user-attachments/assets/a14fa4b2-576a-4c30-9050-50d3e221fb82" />
+
+
+# Retos Hackethon Express 
+>>>>>>> feature/LauraReto4
 
