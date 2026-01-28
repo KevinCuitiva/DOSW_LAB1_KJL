@@ -24,3 +24,53 @@ Para garantizar un desarrollo organizado y colaborativo, se establecieron las si
 - Control de versiones y trabajo colaborativo:
   Se crearán ramas individuales en el repositorio para cada una de las soluciones desarrolladas. Posteriormente, una vez validadas y corregidas, se realizará el proceso de merge hacia la rama principal (main),      integrando de manera ordenada todos los puntos requeridos en el laboratorio.
 
+
+# RETO 2
+
+Se crearon dos ramas una para cada estudiante
+
+![Imagen 1](laboratorio1/imagenes/1.png)
+
+Después de crear las ramas cada estudiante agrega su parte correspondiente (la primera el StringBuilder y la segunda el StringBuffer) y se procede a hacer el commit de cada una al final queda así.
+
+![Imagen 2](laboratorio1/imagenes/2.png)
+![Imagen 3](laboratorio1/imagenes/3.png)
+
+Esto era cada commit correspondiente a cada estudiante y en la rama principal del reto se hace el merge de las dos ramas, una la del Carril 1 con el StringBuilder y otra la del Carril 2 con el StringBuffer y se soluciona los conflictos que se presentan y así queda el código final.
+
+![Imagen 4](laboratorio1/imagenes/4.png)
+
+Después en el Carril 1, se hace el commit correspondiente y luego se hace un merge con la rama principal (Carril 1) y se hace push de todo.
+
+![Imagen 5](laboratorio1/imagenes/5.png)
+
+Hacemos lo mismo con el Carril 2, y hacemos un merge con la rama principal (Carril 2) y se hace push de todo.
+
+![Imagen 6](laboratorio1/imagenes/6.png)
+
+Después con el código final funcional, se hace un commit final y queda el grafo así.
+
+![Imagen 7](laboratorio1/imagenes/7.png)
+
+# RETO 3
+
+Se crearon dos ramas, una para cada estudiante.
+
+![Imagen 1](laboratorio1/imagenes/imagenes%20reto%203/1.png)
+
+Después de crear las ramas cada estudiante agrega su parte correspondiente (la primera el StringBuilder y la segunda el StringBuffer) y se procede a hacer el commit de cada una, al final queda así.
+
+![Imagen 2](laboratorio1/imagenes/imagenes%20reto%203/2.png)
+![Imagen 3](laboratorio1/imagenes/imagenes%20reto%203/3.png)
+
+Esto era cada commit correspondiente a cada estudiante y en la rama principal del reto se hace el merge de las dos ramas, una la del Builder con el StringBuilder y otra la del Buffer con el StringBuffer y se solucionan los conflictos que se presentan y así queda el código final.
+
+![Imagen 4](laboratorio1/imagenes/imagenes%20reto%203/4.png)
+
+Después en el Builder, se hace el commit correspondiente y luego se hace un merge con la rama principal (Builder) y se hace push de todo.
+
+![Imagen 5](laboratorio1/imagenes/imagenes%20reto%203/5.png)
+
+Hacemos lo mismo con el Buffer, y hacemos un merge con la rama principal (Buffer) y se hace push de todo.
+
+![Imagen 6](laboratorio1/imagenes/imagenes%20reto%203/6.png)
