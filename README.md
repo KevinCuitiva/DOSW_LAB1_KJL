@@ -142,3 +142,117 @@ Este reto permitió reforzar conceptos relacionados con programación funcional 
 
 Implementación de la máquina de decisiones con comandos interactivos y ejecución del programa solicitando comandos al usuario y mostrando las respuestas correspondientes
 <img width="1900" height="900" src="image-5.png" />
+
+# PREGUNTAS 
+
+Pregunta 1: 
+¿Cuál es la diferencia entre git merge y git rebase?
+
+Respondida por: Laura Nicol Castillo Forero
+
+Respuesta:
+git merge y git rebase son dos comandos utilizados para integrar cambios entre ramas, pero funcionan de manera diferente.
+
+El comando git merge combina dos ramas creando un commit de merge, el cual conserva el historial completo de ambas ramas. Este método es seguro y mantiene una representación fiel del trabajo colaborativo, ya que permite identificar claramente cuándo y desde qué ramas se realizaron las integraciones.
+
+En resumen, git merge preserva el historial tal como ocurrió, mientras que git rebase lo reorganiza para hacerlo más lineal.
+
+Pregunta 2: 
+Si dos ramas modifican la misma línea de un archivo, ¿qué sucede al hacer merge?
+
+Respondida por: Laura Nicol Castillo Forero 
+
+Respuesta:
+Cuando dos ramas modifican la misma línea de un archivo y se intenta realizar un git merge, Git no puede decidir automáticamente cuál cambio conservar. En este caso, se produce un conflicto de merge.
+
+Pregunta 3: 
+¿Cómo puedes ver gráficamente el historial de merges y ramas en consola?
+
+Respondida por: Laura Nicol Castillo Forero
+
+Respuesta:
+Para visualizar gráficamente el historial de commits, ramas y merges desde la consola, se puede utilizar el siguiente comando:
+
+git log --oneline --graph --all
+
+Este comando muestra una representación visual del historial del repositorio, donde se pueden observar las bifurcaciones de ramas, los commits realizados y los puntos en los que se realizaron merges. Esta visualización facilita la comprensión del flujo de trabajo y la relación entre las diferentes ramas del proyecto.
+
+Pregunta 4: 
+Explica la diferencia entre un commit y un push.
+
+Respondida por: Laura Nicol Castillo Forero
+
+Respuesta:
+Un commit es una acción local que guarda los cambios realizados en el repositorio del desarrollador. Al hacer un commit, los cambios quedan registrados en el historial del proyecto en la máquina local, pero aún no se comparten con otros colaboradores.
+
+Un push, en cambio, se utiliza para enviar los commits locales a un repositorio remoto, como GitHub. Solo después de realizar un push, los cambios se hacen visibles y accesibles para los demás integrantes del equipo.
+
+En resumen, el commit guarda cambios localmente, mientras que el push los publica en el repositorio remoto.
+
+Pregunta 5:
+¿Para qué sirven git stash y git pop?
+
+Respondida por: Kevin Arturo Cuitiva Pardo
+
+Respuesta:
+git stash permite guardar cambios no confirmados de manera temporal sin hacer un commit. Esto es útil cuando necesitas cambiar de rama sin perder tu trabajo. git pop recupera los cambios guardados y los aplica a la rama actual. Es similar a guardar cambios en un "almacén temporal".
+
+Pregunta 6:
+¿Qué diferencia hay entre HashMap y Hashtable?
+
+Respondida por: Kevin Arturo Cuitiva Pardo
+
+Respuesta:
+HashMap no es sincronizado (no es thread-safe) y permite una clave null, siendo más rápido y eficiente para uso de un solo hilo. Hashtable es sincronizado (thread-safe) y no permite claves null, siendo más seguro para entornos multihilo pero más lento.
+
+Pregunta 7:
+¿Qué ventajas tiene Collectors.toMap() frente a un bucle tradicional para llenar un map?
+
+Respondida por: Juan David Silva Camacho
+
+Respuesta:
+Collectors.toMap() es más conciso, legible y permite aplicar transformaciones funcionales durante la creación del map. Un bucle tradicional requiere más líneas de código y es menos flexible para operaciones complejas. Además, toMap() es más eficiente con streams y permite definir el comportamiento en caso de colisiones de claves.
+
+Pregunta 8:
+Si usas List con objetos y luego aplicas stream().map(), ¿qué tipo de operación estás haciendo?
+
+Respondida por: Juan David Silva Camacho
+
+Respuesta:
+stream().map() es una operación de transformación que convierte cada elemento de la lista en otro tipo de dato. Por ejemplo, de una List<Persona> puedes extraer solo los nombres con map(Persona::getNombre), resultando en un stream de String. Es una operación intermedia que crea un nuevo stream con los elementos transformados.
+
+Pregunta 9:
+¿Qué hace el método stream().filter() y qué retorna?
+
+Respondida por: Juan David Silva Camacho
+
+Respuesta:
+stream().filter() es una operación intermedia que recibe un predicado (condición) y retorna un nuevo stream con solo los elementos que cumplen esa condición. Por ejemplo, stream().filter(x -> x > 10) devuelve un stream con números mayores a 10. No consume el stream, solo lo modifica.
+
+Pregunta 10:
+Describe el paso a paso de cómo crear una rama develop si es una funcionalidad nueva.
+
+Respondida por: Laura Nicol Castillo Forero
+
+Respuesta:
+1. Posicionarse en la rama main: git checkout main
+2. Crear la rama develop: git branch develop
+3. Cambiar a la rama: git checkout develop (o git switch develop)
+4. Hacer cambios y commits en develop
+5. Una vez lista, hacer merge a main: git checkout main; git merge develop
+
+Pregunta 11:
+¿Cuál es la diferencia entre crear una rama con git branch y con git checkout -b?
+
+Respondida por: Laura Nicol Castillo Forero
+
+Respuesta:
+git branch solo crea la rama pero no la activa. git checkout -b crea la rama y automáticamente cambia a ella en un solo comando. Entonces, git branch nombre seguido de git checkout nombre es equivalente a git checkout -b nombre.
+
+Pregunta 12:
+¿Por qué es recomendable crear ramas feature/ para nuevas funcionalidades en lugar de trabajar en main directamente?
+
+Respondida por: Laura Nicol Castillo Forero
+
+Respuesta:
+Usar ramas feature/ sigue el patrón Git Flow, manteniendo main estable y funcional. Las ramas feature/ permiten desarrollar de forma aislada, evitando romper el código principal. Facilita la revisión de código (pull requests), permite trabajo colaborativo y mantiene un historial claro de cambios. Si algo sale mal, solo afecta la rama feature, no la rama principal.
