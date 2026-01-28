@@ -24,8 +24,15 @@ Para garantizar un desarrollo organizado y colaborativo, se establecieron las si
 - Control de versiones y trabajo colaborativo:
   Se crearán ramas individuales en el repositorio para cada una de las soluciones desarrolladas. Posteriormente, una vez validadas y corregidas, se realizará el proceso de merge hacia la rama principal (main),      integrando de manera ordenada todos los puntos requeridos en el laboratorio.
 
+## RETOS COMPLETADOS
 
-# RETO 2
+### Reto #1: La Bienvenida 
+**Desarrollado por:** Kevin Cuitiva  
+**Descripción:** Implementación de una expresión lambda para imprimir un saludo de bienvenida utilizando streams, map() y collect(). Los estudiantes están almacenados en una estructura de datos List.
+### Evidencia del reto 
+<img width="1908" height="948" alt="image" src="https://github.com/user-attachments/assets/679c70ab-fbc9-4bee-8c83-d1acc8982762" />
+
+### RETO 2: La carrera paralela
 
 Se crearon dos ramas una para cada estudiante
 
@@ -75,11 +82,11 @@ Hacemos lo mismo con el Buffer, y hacemos un merge con la rama principal (Buffer
 
 ![Imagen 6](laboratorio1/imagenes/imagenes%20reto%203/6.png)
 
-# RETO 4: El tesoro de las llaves duplicadas
+### RETO 4: El tesoro de las llaves duplicadas
 
-Desarrollado por: Laura Nicol Castillo Forero
+**Desarrollado por:** Laura Nicol Castillo Forero
 
-Descripción:
+**Descripción:**
 En este reto se implementó la combinación de dos estructuras de datos (HashMap y Hashtable) desarrolladas en ramas separadas del repositorio, aplicando buenas prácticas de control de versiones con Git.
 
 Inicialmente, se desarrolló una solución utilizando HashMap, la cual almacena pares clave-valor ignorando claves duplicadas y conservando el primer valor ingresado. Posteriormente, se implementó una versión alternativa usando Hashtable, asegurando sincronización y permitiendo la sobrescritura de valores en caso de claves repetidas.
@@ -92,7 +99,7 @@ Finalmente, se realizó el proceso de merge en la rama principal del reto, resol
 - Utiliza stream(), map(), sorted() y Collectors.toMap() con expresiones lambda
 - Permite el ingreso de datos por parte del usuario desde consola
 
-Evidencia del reto
+**Evidencia del reto:**
 
 Rama con implementación usando HashMap
 <img width="1900" height="900" src="image-2.png" />
@@ -103,11 +110,17 @@ Rama con implementación usando Hashtable
 Rama principal con integración final y resolución de conflictos
 <img width="1900" height="900" src="image-4.png" />
 
-# RETO 6: Máquina de decisiones
+### Reto #5: Batalla de Conjuntos 
+**Desarrollado por:** Kevin Cuitiva  
+**Descripción:** Simulación de una batalla donde dos equipos (HashSet y TreeSet) almacenan números. HashSet elimina múltiplos de 3 sin orden, mientras TreeSet elimina múltiplos de 5 manteniendo orden ascendente. Al final, ambas colecciones se unen eliminando duplicados. Utiliza stream().filter() con lambdas para el filtrado y forEach() con lambdas para la impresión de resultados.
+### Evidencia del reto 
+<img width="1907" height="1110" alt="image" src="https://github.com/user-attachments/assets/fb061c53-4cbe-471c-94c2-1af206a895d6" />
 
-Desarrollado por: Laura Nicol Castillo Forero
+### RETO 6: Máquina de decisiones
 
-Descripción:
+**Desarrollado por:** Laura Nicol Castillo Forero
+
+**Descripción:**
 En este reto se desarrolló una máquina de decisiones interactiva en Java, cuyo objetivo principal fue implementar un sistema capaz de ejecutar distintas acciones a partir de comandos ingresados por el usuario desde la consola.
 
 La solución se basa en el uso de un Map<String, Runnable>, donde cada clave representa un comando y cada valor corresponde a una acción específica que la máquina puede ejecutar. Este enfoque permitió evitar estructuras condicionales extensas (if-else o switch), logrando un diseño más limpio, flexible y escalable.
@@ -125,7 +138,7 @@ La versión final del programa cumple con las siguientes características:
 
 Este reto permitió reforzar conceptos relacionados con programación funcional en Java, uso de colecciones, lambdas, y diseño modular, además de fomentar buenas prácticas de legibilidad y mantenimiento del código.
 
-Evidencia del reto:
+**Evidencia del reto:**
 
 Implementación de la máquina de decisiones con comandos interactivos y ejecución del programa solicitando comandos al usuario y mostrando las respuestas correspondientes
 <img width="1900" height="900" src="image-5.png" />
