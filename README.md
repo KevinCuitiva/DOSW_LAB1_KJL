@@ -24,10 +24,58 @@ Para garantizar un desarrollo organizado y colaborativo, se establecieron las si
 - Control de versiones y trabajo colaborativo:
   Se crearán ramas individuales en el repositorio para cada una de las soluciones desarrolladas. Posteriormente, una vez validadas y corregidas, se realizará el proceso de merge hacia la rama principal (main),      integrando de manera ordenada todos los puntos requeridos en el laboratorio.
 
-<<<<<<< HEAD
-# RETOS COMPLETADOS
 
-Reto #4: El tesoro de las llaves duplicadas
+# RETO 2
+
+Se crearon dos ramas una para cada estudiante
+
+![Imagen 1](laboratorio1/imagenes/1.png)
+
+Después de crear las ramas cada estudiante agrega su parte correspondiente (la primera el StringBuilder y la segunda el StringBuffer) y se procede a hacer el commit de cada una al final queda así.
+
+![Imagen 2](laboratorio1/imagenes/2.png)
+![Imagen 3](laboratorio1/imagenes/3.png)
+
+Esto era cada commit correspondiente a cada estudiante y en la rama principal del reto se hace el merge de las dos ramas, una la del Carril 1 con el StringBuilder y otra la del Carril 2 con el StringBuffer y se soluciona los conflictos que se presentan y así queda el código final.
+
+![Imagen 4](laboratorio1/imagenes/4.png)
+
+Después en el Carril 1, se hace el commit correspondiente y luego se hace un merge con la rama principal (Carril 1) y se hace push de todo.
+
+![Imagen 5](laboratorio1/imagenes/5.png)
+
+Hacemos lo mismo con el Carril 2, y hacemos un merge con la rama principal (Carril 2) y se hace push de todo.
+
+![Imagen 6](laboratorio1/imagenes/6.png)
+
+Después con el código final funcional, se hace un commit final y queda el grafo así.
+
+![Imagen 7](laboratorio1/imagenes/7.png)
+
+# RETO 3
+
+Se crearon dos ramas, una para cada estudiante.
+
+![Imagen 1](laboratorio1/imagenes/imagenes%20reto%203/1.png)
+
+Después de crear las ramas cada estudiante agrega su parte correspondiente (la primera el StringBuilder y la segunda el StringBuffer) y se procede a hacer el commit de cada una, al final queda así.
+
+![Imagen 2](laboratorio1/imagenes/imagenes%20reto%203/2.png)
+![Imagen 3](laboratorio1/imagenes/imagenes%20reto%203/3.png)
+
+Esto era cada commit correspondiente a cada estudiante y en la rama principal del reto se hace el merge de las dos ramas, una la del Builder con el StringBuilder y otra la del Buffer con el StringBuffer y se solucionan los conflictos que se presentan y así queda el código final.
+
+![Imagen 4](laboratorio1/imagenes/imagenes%20reto%203/4.png)
+
+Después en el Builder, se hace el commit correspondiente y luego se hace un merge con la rama principal (Builder) y se hace push de todo.
+
+![Imagen 5](laboratorio1/imagenes/imagenes%20reto%203/5.png)
+
+Hacemos lo mismo con el Buffer, y hacemos un merge con la rama principal (Buffer) y se hace push de todo.
+
+![Imagen 6](laboratorio1/imagenes/imagenes%20reto%203/6.png)
+
+# RETO 4: El tesoro de las llaves duplicadas
 
 Desarrollado por: Laura Nicol Castillo Forero
 
@@ -39,13 +87,9 @@ Inicialmente, se desarrolló una solución utilizando HashMap, la cual almacena 
 Finalmente, se realizó el proceso de merge en la rama principal del reto, resolviendo los conflictos generados y unificando ambas implementaciones en una única solución final que:
 
 - Prioriza los valores provenientes del Hashtable en caso de conflicto
-
 - Convierte todas las claves a mayúsculas antes de imprimir
-
 - Ordena los resultados de forma ascendente
-
 - Utiliza stream(), map(), sorted() y Collectors.toMap() con expresiones lambda
-
 - Permite el ingreso de datos por parte del usuario desde consola
 
 Evidencia del reto
@@ -53,14 +97,13 @@ Evidencia del reto
 Rama con implementación usando HashMap
 <img width="1900" height="900" src="image-2.png" />
 
-
 Rama con implementación usando Hashtable
 <img width="1900" height="900" src="image-3.png" />
 
 Rama principal con integración final y resolución de conflictos
 <img width="1900" height="900" src="image-4.png" />
 
-Reto #6: Máquina de decisiones
+# RETO 6: Máquina de decisiones
 
 Desarrollado por: Laura Nicol Castillo Forero
 
@@ -71,19 +114,14 @@ La solución se basa en el uso de un Map<String, Runnable>, donde cada clave rep
 
 El desarrollo del reto se realizó dividiendo la inicialización de los comandos en dos fragmentos lógicos, los cuales fueron integrados posteriormente en una única solución funcional.
 
--La versión final del programa cumple con las siguientes características:
+La versión final del programa cumple con las siguientes características:
 
--Permite al usuario ingresar comandos dinámicamente desde la consola.
-
--Ejecuta acciones asociadas a cada comando utilizando expresiones lambda.
-
--Convierte los comandos ingresados a mayúsculas para evitar errores por diferencias de formato.
-
--Maneja correctamente los comandos desconocidos mostrando un mensaje informativo.
-
--Incluye un comando especial (SALIR) que finaliza la ejecución del programa de forma controlada.
-
--Facilita la extensión del sistema mediante la adición de nuevos comandos sin modificar la lógica principal.
+- Permite al usuario ingresar comandos dinámicamente desde la consola.
+- Ejecuta acciones asociadas a cada comando utilizando expresiones lambda.
+- Convierte los comandos ingresados a mayúsculas para evitar errores por diferencias de formato.
+- Maneja correctamente los comandos desconocidos mostrando un mensaje informativo.
+- Incluye un comando especial (SALIR) que finaliza la ejecución del programa de forma controlada.
+- Facilita la extensión del sistema mediante la adición de nuevos comandos sin modificar la lógica principal.
 
 Este reto permitió reforzar conceptos relacionados con programación funcional en Java, uso de colecciones, lambdas, y diseño modular, además de fomentar buenas prácticas de legibilidad y mantenimiento del código.
 
@@ -91,12 +129,3 @@ Evidencia del reto:
 
 Implementación de la máquina de decisiones con comandos interactivos y ejecución del programa solicitando comandos al usuario y mostrando las respuestas correspondientes
 <img width="1900" height="900" src="image-5.png" />
-=======
-# Estructura de paquetes creada:
-
-<img width="396" height="537" alt="image" src="https://github.com/user-attachments/assets/a14fa4b2-576a-4c30-9050-50d3e221fb82" />
-
-
-# Retos Hackethon Express 
->>>>>>> feature/LauraReto4
-
