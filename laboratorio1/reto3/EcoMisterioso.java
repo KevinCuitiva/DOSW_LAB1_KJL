@@ -17,6 +17,11 @@ public class EcoMisterioso {
         return sb.toString();
     };
 
+    public static Transformacion invertirConBuffer = mensaje -> {
+        StringBuffer sf = new StringBuffer(mensaje);
+        return sf.reverse().toString();
+    };
+
     public static void main(String[] args) {
         
     }
