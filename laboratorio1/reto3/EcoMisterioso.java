@@ -22,7 +22,24 @@ public class EcoMisterioso {
         return sf.reverse().toString();
     };
 
+    public static String procesarEco(String mensaje) {
+        String repetido = repetirConBuilder.procesar(mensaje);
+        String invertido = invertirConBuffer.procesar(repetido);
+        return invertido;
+    }
+
     public static void main(String[] args) {
+        String input = "Eco";
         
+        System.out.println("Input: " + input);
+        String repetido = repetirConBuilder.procesar(input);
+        System.out.println("Repetido (3 veces): " + repetido);
+        
+        String invertido = invertirConBuffer.procesar(repetido);
+        System.out.println("Invertido: " + invertido);
+        
+        System.out.println();
+        String resultado = procesarEco(input);
+        System.out.println("Resultado final: " + resultado);
     }
 }
