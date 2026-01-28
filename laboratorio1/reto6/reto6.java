@@ -53,9 +53,6 @@ public class reto6 {
         );
     }
 
-    // ===========================
-    // MAIN INTERACTIVO
-    // ===========================
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
