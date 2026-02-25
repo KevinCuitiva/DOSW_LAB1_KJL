@@ -256,3 +256,15 @@ Respondida por: Laura Nicol Castillo Forero
 
 Respuesta:
 Usar ramas feature/ sigue el patrón Git Flow, manteniendo main estable y funcional. Las ramas feature/ permiten desarrollar de forma aislada, evitando romper el código principal. Facilita la revisión de código (pull requests), permite trabajo colaborativo y mantiene un historial claro de cambios. Si algo sale mal, solo afecta la rama feature, no la rama principal.
+
+# OBSERVACIONES - GENERALES
+
+<img width="808" height="392" alt="image" src="https://github.com/user-attachments/assets/8f528627-6be4-47c0-92d6-32a227b743f9" />
+<img width="806" height="574" alt="image" src="https://github.com/user-attachments/assets/de14cb96-1083-470b-bbde-73f744db99f1" />
+<img width="809" height="492" alt="image" src="https://github.com/user-attachments/assets/d0b449db-97df-49b6-8faa-c55d5d6cfbef" />
+
+## OBSERVACIONES - ONBOARDING (INDIVIDUAL)
+<img width="472" height="149" alt="image" src="https://github.com/user-attachments/assets/4724ad8d-3b5a-46ab-86f2-5491cc3888ca" />
+
+## NOTA
+<img width="349" height="149" alt="image" src="https://github.com/user-attachments/assets/66bf2e50-9ace-42c6-bf9d-c09778efc208" />
